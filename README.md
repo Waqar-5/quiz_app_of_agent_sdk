@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome to my project
 
 ## Project info
 
@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/93197d0b-142a-434e-95da-386aa55f8af4) and start prompting.
+Simply visit the [Lovable Project](https://preview--questify-ai-mastery.lovable.app/) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
