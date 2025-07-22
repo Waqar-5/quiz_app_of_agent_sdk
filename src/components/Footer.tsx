@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Target } from 'lucide-react';
 import { FaBrain, FaGithub, FaTwitter, FaLinkedin, FaHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -13,9 +14,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FaGithub, href: '#', label: 'GitHub' },
-    { icon: FaTwitter, href: '#', label: 'Twitter' },
-    { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
+    { icon: FaGithub, href: 'https://github.com/Waqar-5', target: "_blank", label: 'GitHub' },
+    { icon: FaTwitter, href: 'https://x.com/WaqarAli1353373?t=vL92IQsCkBYsM217V28Xxg&s=08',target: "_blank", label: 'Twitter' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/waqar-ali-997b962b5/', target: "_blank", label: 'LinkedIn' },
   ];
 
   return (
@@ -56,15 +57,18 @@ const Footer = () => {
             >
               {socialLinks.map((social, index) => (
                 <motion.a
-                  key={social.label}
-                  href={social.href}
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="p-2 bg-secondary rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-5 h-5" />
-                </motion.a>
+  key={social.label}
+  href={social.href}
+  target={social.target || "_self"}
+  rel={social.target === "_blank" ? "noopener noreferrer" : undefined}
+  whileHover={{ scale: 1.1, y: -2 }}
+  whileTap={{ scale: 0.95 }}
+  className="p-2 bg-secondary rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+  aria-label={social.label}
+>
+  <social.icon className="w-5 h-5" />
+</motion.a>
+
               ))}
             </motion.div>
           </div>
