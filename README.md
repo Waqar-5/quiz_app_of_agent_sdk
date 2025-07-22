@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/93197d0b-142a-434e-95da-386aa55f8af4
+**URL**: https://preview--questify-ai-mastery.lovable.app/
 
 ## How can I edit this code?
 
